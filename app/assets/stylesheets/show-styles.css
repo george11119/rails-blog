@@ -1,0 +1,93 @@
+p, h1, h2 {
+  margin: 0;
+}
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container .title {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.container .body {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(65ch, 100%)
+    1fr;
+}
+
+.container .body > * {
+  grid-column: 2;
+}
+
+.container .body ul {
+  margin: 16px;
+  list-style-type: none;
+  padding: 0;
+  justify-self: center;
+  display: flex;
+  gap: 32px;
+}
+
+.comment-section {
+  margin-top: 16px;
+}
+
+.comment-section h2 {
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: #f4f4f4;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  margin-top: 16px;
+}
+
+.inputfield {
+  font-weight: bold;
+}
+
+.comment {
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comment-title {
+  font-weight: bold;
+}
+
+.comment .comment-title .commenter {
+  color: blue;
+}
+
+.comment-body {
+  font-size: 16px;
+}

@@ -13,3 +13,73 @@
  *= require_tree .
  *= require_self
  */
+html {
+  color: #343434;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a, a:visited {
+  color: #343434;
+  text-decoration: none;
+}
+
+.header {
+  padding: 1.5em;
+  border-bottom: 1px solid #e9dcbe;
+}
+
+.header {
+}
+
+.header .innerheader {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header .title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header .links {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  flex: 1 0 auto;
+}
+
+.footer {
+  margin-top: 2em;
+  background-color: #e9dcbe;
+  height: 50px;
+  color: #8e8b82;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .innerfooter {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}

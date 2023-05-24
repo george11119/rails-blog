@@ -1,9 +1,8 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
-
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
+<div class="comment">
+  <div class="comment-title">
+    <span class="commenter"><%= comment.commenter %></span> <%= comment.created_at %>
+  </div>
+  <div class="comment-body">
+    <%= comment.body %>
+  </div>
+</div>

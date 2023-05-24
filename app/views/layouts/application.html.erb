@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsBlog</title>
+    <title>George's Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,25 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="header">
+      <div class="innerheader">
+        <div class="title">
+          <%= link_to "George's Blog", root_path %>
+        </div>
+        <div class="links">
+          <%= link_to "New Article", new_article_path %>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="innerfooter">
+        © 2023 George Mao
+      </div>
+    </div>
   </body>
 </html>

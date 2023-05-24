@@ -1,11 +1,22 @@
-<h1>Articles</h1>
+<% stylesheet_link_tag "index-styles.css" %>
 
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article %>
-    </li>
-  <% end %>
-</ul>
+<div class="index-container">
+  <h3>Recent Posts<h3>
 
-<%= link_to "New Article", new_article_path %>
+  <div class="cards">
+    <% @articles.reverse_each do |article| %>
+      <div class="card">
+        <div class="card-title">
+          <%= link_to article.title, article %>
+        </div>
+        <div class="card-content">
+          <%= truncate(article.body, length: 150) %>
+        </div>
+        <div class="read-more">
+          <%= link_to "Read more", article %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
